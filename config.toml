@@ -11,7 +11,7 @@ default_language = "en"
 minify_html = true
 
 # Whether to automatically compile all Sass files in the sass directory
-compile_sass = false
+compile_sass = true
 
 # When set to "all", paginated pages are not a part of the sitemap, default is "none"
 exclude_paginated_pages_in_sitemap = "none"
