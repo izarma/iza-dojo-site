@@ -1,0 +1,52 @@
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+    font-size: 1em;
+}
+
+hr {
+    margin: 12px 0;
+    background: linear-gradient(90deg, #FE0000 16.66%,
+		#FD8C00 16.66%, 33.32%,
+		#CEB600 33.32%, 49.98%,
+		#119F0B 49.98%, 66.64%,
+		#0644B3 66.64%, 83.3%,
+		#B11DCB 83.3%);
+    height: 1px;
+    width: 100%;
+    max-width: 300px;
+    border: 0;
+}
+
+.md-content {
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+}
+
+.js-only {
+    display: none;
+}
+
+a, a:visited {
+    color: #00a8a8;
+}
+
+.title-a {
+    color: #c1c4c1 !important;
+    text-decoration: none !important;
+
+    &:hover {
+        text-decoration: underline !important;
+    }
+}
