@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='utf8'>
+
+        <link rel='stylesheet' href='/base.css'>
+        <link rel='stylesheet' href='/screen.css'>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            * { font-family: 'Noto Serif JP' }
+        </style>
+
+        <title>Iza Dojo</title>
+    </head>
+
+    <body>
+        <div class='screen bg'></div>
+        <div class='screen content'>
+            <h1 style='margin-bottom:0'>
+                <a href='/' class="title-a">Iza Dojo</a>
+            </h1>
+            <hr style='margin:0 auto'/>
+
+            {% block content %} {% endblock %}
+            
+            <p style='font-size:80%;text-align:center;margin-top:80px;height:120px'>
+                Background credit to
+                <a style='color:gray !important' href="https://tenor.com/view/retro-aesthetic-gif-19478658">
+                    tenor
+                </a>
+            </p>
+        </div>
+        {% block root %} {% endblock %}
+
+	<script>
+
+		var elements = document.getElementsByClassName('js-only');
+		var array_elements = [];
+		for (var i = 0; i != elements.length; i++) {
+			array_elements.push(elements.item(i));
+		}
+
+		delete elements; delete i;
+
+		for (var i = 0; i != array_elements.length; i++) {
+			array_elements[i].className = array_elements[i].className.replace('js-only', '')
+		}
+
+	</script>
+        <script src='/script/cursor.min.js' type='application/javascript'></script>
+        <script async src="https://umami.blek.codes/script.js" data-website-id="8a705ac4-37db-4300-a5a2-4a6e2a8c8960"></script>
+    </body>
+</html>

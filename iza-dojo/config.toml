@@ -1,0 +1,63 @@
+# The URL the site will be built for
+base_url = "http://www.iza.dojo/"
+
+# The site title and description; used in feeds by default.
+title = "iza-dojo"
+description = "iza dojo landing page"
+
+# The default language; used in feeds.
+default_language = "en"
+
+# The site theme to use.
+theme = "otherworld"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = false
+
+# When set to "all", paginated pages are not a part of the sitemap, default is "none"
+exclude_paginated_pages_in_sitemap = "none"
+
+# The number of articles to include in the feed. All items are included if
+# this limit is not set (the default).
+# feed_limit = 20
+
+author = "izarma"
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+
+[extra]  # Theme-specific configuration
+# Required by header macro
+author = "Harshit Kumar"
+user_title = "Software Engineer"
+description = "My personal portfolio site"
+default_theme = "dark"
+user_description = "| SDE | Rust | Backend | Game Dev |"
+
+# Required by footer macro (if keeping original credit)
+theme_author = "Silvano Sallese"
+original_author = "Nathan Randecker"
+
+# Optional but recommended
+# google_analytics = { id = "UA-XXXXX-X" } 
+
+# Social Links (match header-icons structure)
+github = "https://github.com/izarma"
+
+social = [
+    { name = "github", url = "https://github.com/izarma" },
+    { name = "linkedin", url = "https://www.linkedin.com/in/izarma/" }
+]
+
+taxonomies = [
+    { name = "tags", feed = true },
+    { name = "categories", feed = true }
+]
+
+menu = [
+    { url = "/blog", name = "Blog" },
+    { url = "/tags", name = "Tags" }
+]
